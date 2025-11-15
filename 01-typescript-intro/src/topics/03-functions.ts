@@ -13,10 +13,20 @@ function multiply(firstNumber: number, secondNumber?: number, base: number = 2) 
     return firstNumber *  base;
 }
 
-const result = addNumbers(1, 2); 
-const result2 = addNumbersArrow(1, 2);
-const multiplyREsult = multiply(2);
+// const result = addNumbers(1, 2); 
+// const result2 = addNumbersArrow(1, 2);
+// const multiplyREsult = multiply(2);
+// console.log({ result, result2, multiplyREsult });
 
-console.log({ result, result2, multiplyREsult });
+interface Character {
+    name: string;
+    hp: number;
+    showHp: ()  => void;
+}
+
+const healCharacter = ( character: Character, amount: number ) => {
+    
+    character.hp += amount;
+};
 
 export{};
